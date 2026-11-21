@@ -1,0 +1,83 @@
+# Локальные окружения и загруженные инструменты
+.venv/
+.venv-*/
+venv/
+venv-*/
+env/
+.env/
+.tox/
+.nox/
+.conda/
+.pixi/
+node_modules/
+.tools-graphics/
+.downloads-graphics/
+
+# Локальные параметры и учётные данные
+.env
+.env.*
+!.env.example
+
+# Кэши и результаты локальных проверок
+.uv-cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+.coverage
+.coverage.*
+htmlcov/
+
+# Файлы изображений по всей репе
+*.png
+*.jpg
+*.jpeg
+*.jpe
+*.jfif
+*.gif
+*.bmp
+*.dib
+*.tif
+*.tiff
+*.webp
+*.avif
+*.heic
+*.heif
+*.ico
+*.svg
+*.psd
+*.ai
+*.xcf
+
+*.pdf
+
+# Локальные растровые маски
+*.pbm
+*.pgm
+*.ppm
+*.pnm
+
+# Личные исходники и результаты
+/inputs/
+/deliverables/
+/artifacts/
+
+# Временные профили и локальные PDF графических проверок
+/artifacts/**/profile/
+/artifacts/**/inkscape-profile/
+/artifacts/**/clean-profile/
+/artifacts/**/*.pdf
+
+# Автоматически очищаемая рабочая среда графических CLI
+/.cache/graphics/
+
+# Архивы
+*.zip
+# Переносимые проверочные SVG
+!tests/fixtures/sketch/A.svg
+!tests/fixtures/sketch/curve.svg
+!tests/fixtures/labeler/colors.svg
+!tests/fixtures/labeler/complex.svg
+!tests/fixtures/labeler/unsupported.svg
+!tests/fixtures/assembly/three-colors.svg

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Контуры и номера художественных зон</name>
+  <id>org.inkscape.mosaic.labeler</id>
+  <param name="output_dir" type="string" gui-text="Абсолютный каталог результатов"></param>
+  <param name="font_size" type="float" min="0.1" max="1000" gui-text="Размер номера (SVG units)">7</param>
+  <param name="min_font_size" type="float" min="0.1" max="1000" gui-text="Минимальный размер номера">2</param>
+  <param name="stroke_width" type="float" min="0.01" max="100" gui-text="Толщина контура (SVG units)">0.3</param>
+  <param name="min_area" type="float" min="0" max="1000000" gui-text="Порог микрообластей (SVG units²)">15</param>
+  <param name="min_width" type="float" min="0" max="10000" gui-text="Порог узкости">0</param>
+  <param name="micro_policy" type="optiongroup" appearance="combo" gui-text="Микрообласти">
+    <option value="flag">Сохранить и отметить</option><option value="keep">Сохранить</option><option value="merge">Явное слияние</option>
+  </param>
+  <param name="allow_geometry_change" type="bool" gui-text="Разрешить изменение геометрии при merge">false</param>
+  <effect><object-type>all</object-type><effects-menu><submenu name="Мозаика"/></effects-menu></effect>
+  <script><command location="inx" interpreter="python">mosaic_labeler.py</command></script>
+</inkscape-extension>

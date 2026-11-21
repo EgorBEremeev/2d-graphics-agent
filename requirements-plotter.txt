@@ -1,0 +1,15 @@
+asteval==1.0.10
+cachetools==8.0.0
+click==8.5.1
+dill==0.4.1
+multiprocess==0.70.19
+numpy==2.5.4
+pnoise==0.2.0
+pyphen==0.15.0
+scipy==1.18.1
+shapely==2.2.0
+svgelements==1.9.6
+svgwrite==1.4.3
+tomli==2.5.0
+vpype==1.15.0
+rectpack==0.2.2
